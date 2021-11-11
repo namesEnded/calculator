@@ -2,6 +2,7 @@
 //
 
 #include "pch.h"
+#include "funcs.h"
 #include <iostream>
 
 using namespace std;
@@ -11,7 +12,13 @@ int main()
     int input;
     bool exitFlag = false;
     do {
-        cout << "Choose an action: " << endl;
+        double a = 0.0, b = 0.0 , sum = 0.0;
+        cout << "Enter A: ";
+        cin >> a;
+        cout << "\nEnter B: ";
+        cin >> b;
+
+        cout << "\nChoose an action: " << endl;
         cout << "1. Addition" << endl;
         cout << "2. Subtraction" << endl;
         cout << "3. Multiplication" << endl;
@@ -23,7 +30,8 @@ int main()
         switch (input)
         {
         case 1:
-            cout << endl << "WORK IN PROGRESS\n";
+            sum = Sum(a, b);
+            cout << endl << "A + B = " << sum << endl;
             break;
 
         case 2:
