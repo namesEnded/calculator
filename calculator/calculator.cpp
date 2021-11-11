@@ -12,10 +12,8 @@ int main()
     int input;
     bool exitFlag = false;
     do {
-        double a = 0.0, b = 0.0, sum = 0.0;
-        double sub = 0.0;
-        double mul = 0.0;
-        double div = 0.0;
+        double a = 0.0, b = 0.0;
+        double buff = 0.0;
         cout << "Enter A: ";
         cin >> a;
         cout << "\nEnter B: ";
@@ -33,18 +31,18 @@ int main()
         switch (input)
         {
         case 1:
-            sum = Sum(a, b);
-            cout << endl << "A + B = " << sum << endl;
+            buff = Sum(a, b);
+            cout << endl << "A + B = " << buff << endl;
             break;
 
         case 2:
-            sub = Sub(a, b);
-            cout << endl << "A - B = " << sub << endl;
+            buff = Sub(a, b);
+            cout << endl << "A - B = " << buff << endl;
             break;
 
         case 3:
-            mul = Mul(a, b);
-            cout << endl << "A * B = " << mul << endl;
+            buff = Mul(a, b);
+            cout << endl << "A * B = " << buff << endl;
             break;
 
         case 4:
@@ -52,8 +50,8 @@ int main()
                 cout << "Division by zero error" << endl;
                 break;
             }
-            div = Div(a, b);
-            cout << endl << "A / B = " << div << endl;
+            buff = Div(a, b);
+            cout << endl << "A / B = " << buff << endl;
             break;
 
         case 5:
