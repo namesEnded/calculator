@@ -15,6 +15,7 @@ int main()
         double a = 0.0, b = 0.0, sum = 0.0;
         double sub = 0.0;
         double mul = 0.0;
+        double div = 0.0;
         cout << "Enter A: ";
         cin >> a;
         cout << "\nEnter B: ";
@@ -47,7 +48,12 @@ int main()
             break;
 
         case 4:
-            cout << endl << "WORK IN PROGRESS\n";
+            if (b == 0.0) {
+                cout << "Division by zero error" << endl;
+                break;
+            }
+            div = Div(a, b);
+            cout << endl << "A / B = " << div << endl;
             break;
 
         case 5:
