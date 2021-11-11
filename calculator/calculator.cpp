@@ -14,6 +14,7 @@ int main()
     do {
         double a = 0.0, b = 0.0, sum = 0.0;
         double sub = 0.0;
+        double mul = 0.0;
         cout << "Enter A: ";
         cin >> a;
         cout << "\nEnter B: ";
@@ -36,13 +37,13 @@ int main()
             break;
 
         case 2:
-
             sub = Sub(a, b);
             cout << endl << "A - B = " << sub << endl;
             break;
 
         case 3:
-            cout << endl << "WORK IN PROGRESS\n ";
+            mul = Mul(a, b);
+            cout << endl << "A * B = " << mul << endl;
             break;
 
         case 4:
